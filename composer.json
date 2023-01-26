@@ -1,0 +1,26 @@
+{
+    "name": "himamage/rounded-discount-price",
+    "description": "",
+    "require": {
+        "magento/magento-composer-installer": "*",
+        "magento/module-translation": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Hima Mage",
+            "email": "hima.mage@gmail.com",
+            "homepage": "https://www.linkedin.com/in/ibrahem-mohamed-373691199/"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "HimaPage\\RoundedDiscountPrice\\": ""
+        }
+    }
+}
