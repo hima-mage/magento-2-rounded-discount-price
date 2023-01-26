@@ -11,11 +11,13 @@ use Magento\Framework\Data\OptionSourceInterface;
  */
 class RoundingTypeProvider implements OptionSourceInterface
 {
+    // this are the only three value available
     public const ROUNDING_TYPE_NONE = 'none';
     public const ROUNDING_TYPE_UP = 'up';
     public const ROUNDING_TYPE_DOWN = 'down';
 
     /**
+     *  option for ui_component will return array contain each value and it's label displayed on the form
      * @return array
      */
     public function toOptionArray(): array

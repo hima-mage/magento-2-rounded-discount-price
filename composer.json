@@ -1,5 +1,5 @@
 {
-    "name": "himamage/rounded-discount-price",
+    "name": "himamage//magento-round-product-discount",
     "description": "",
     "require": {
         "magento/magento-composer-installer": "*",

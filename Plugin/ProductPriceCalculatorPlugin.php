@@ -9,6 +9,7 @@ use Magento\CatalogRule\Model\Indexer\ProductPriceCalculator;
 use Magento\CatalogRule\Model\ResourceModel\Rule\CollectionFactory as CatalogRuleCollectionFactory;
 
 /**
+ * plugin to override the catalog price
  * Class ProductPriceCalculatorPlugin
  * @package HimaMage\RoundedDiscountPrice\Plugin
  **/
@@ -23,7 +24,7 @@ class ProductPriceCalculatorPlugin
     }
 
     /**
-     * Round discounted price if needed
+     *
      *
      * @param ProductPriceCalculator $subject
      * @param float $result
@@ -38,7 +39,7 @@ class ProductPriceCalculatorPlugin
         $productData = null
     ): float {
         $roundingType = $this->getRuleRoundingType($ruleData['rule_id']);
-
+        // if it's none just return the price already calculated
         if ($roundingType === null || $roundingType === RoundingTypeProvider::ROUNDING_TYPE_NONE) {
             return $result;
         }
